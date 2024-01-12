@@ -40,11 +40,8 @@ bool randomizeVectorOrder(std::vector<int>* vecPtr) {
 }
 
 void BogoSort(std::vector<int>* numbers) {
-    if (!std::is_sorted(numbers->begin(), numbers->end()))
-    {
-        while(!std::is_sorted(numbers->begin(), numbers->end())) {
-            randomizeVectorOrder(numbers);
-        }
+    while(!std::is_sorted(numbers->begin(), numbers->end())) {
+        randomizeVectorOrder(numbers);
     }
 }
 

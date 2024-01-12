@@ -1,5 +1,4 @@
 # BogoSort Multithreaded Test
-### Docs maded with help CodiumAI
 
 The `main` function in the given code is responsible for running the BogoSort algorithm on a range of input sizes and recording the time taken to sort each input. It uses multithreading to perform multiple tests in parallel and writes the results to an output file.
 
@@ -27,10 +26,19 @@ The `main` function writes the results of the BogoSort tests to an output file. 
 
 ## Usage example
 
-```cpp
+```
 Provide max length of list for BogoSort: 5
+```
 
 This code prompts the user to enter the maximum length of the list to be
 sorted using BogoSort. If the user enters 5, the code will perform BogoSort
 tests on lists of lengths 2, 3, 4 and 5. The results will be written to the
 "results_output.txt" file.
+
+## Time Complexity:
+
+Worst Case: O(∞) (since this algorithm has no upper bound)
+Average Case: O(n*n!)
+Best Case: O(n)(when the array given is already sorted)
+
+### Docs maded with help CodiumAI
